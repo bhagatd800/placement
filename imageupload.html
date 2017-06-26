@@ -1,0 +1,48 @@
+
+
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+    <meta charset="UTF-8">
+	
+	<script type="text/javascript">
+
+        function imgSize(){
+
+            var myImg = document.querySelector("#image");
+
+            var width = myImg.clientWidth;
+            // var w=document.getElementById("image").naturalHeight;
+            // alert(w);
+            //alert(width);
+
+            var height = myImg.clientHeight;
+            if(width<600){
+            	alert("alert another image");
+            }
+            else if(width>600)
+            {
+            	alert("crop the image");
+            }
+            else("image is of correct width");
+
+       
+
+        }
+
+    </script>
+
+    </head>
+
+    <body>
+
+            <input id="image" class="file-upload__input" type="file" name="file-upload">
+        <p><button type="button" onclick="imgSize();">Upload</button></p>
+</div>
+    </body>
+
+    </html>
+

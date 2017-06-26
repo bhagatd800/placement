@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <link href="bootstrap.min.css.map" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
+
+</head>
+<body ng-app="loadProfile" ng-controller="loadProfileController">
+<br>
+<center>
+<div class="input-group" style="width:30%">
+
+<input type="text" value="" class="form-control" placeholder="Username" id="username" name='username' ng-model='data'/>
+<br>
+</center>
+<center>
+<br>
+<button id="button" ng-click="submit()">Submit</button>
+</div>
+
+<table ng-if="profileData" class="table table-striped">
+					  <thead class="thead-inverse">
+					    <tr>
+					      <th>S.no</th>
+					  	  <th>Details</th>
+					  	</tr>
+					  </thead>
+					<tbody>
+				      	<tr><td>login<td>
+				        <td>{{profileData.login}}</td>
+				        </tr>
+				        <tr><td>id<td>
+				        <td>{{profileData.id}}</td>
+				        </tr>
+
+				        <tr><td>avatar_url<td>
+				        <td>{{profileData.avatar_url}}</td>
+				        </tr>
+
+				        <tr><td>gravatar_id<td>
+				        <td>{{profileData.gravatar_id}}</td>
+				        </tr>
+
+				        <tr><td>html_url<td>
+				        <td>{{profileData.html_url}}</td>
+				        </tr>
+
+				        <tr><td>type<td>
+				        <td>{{profileData.type}}</td>
+				        </tr>
+
+				        <tr><td>site_admin<td>
+				        <td>{{profileData.site_admin}}</td>
+				        </tr>
+				         <tr><td>name<td>
+				        <td>{{profileData.name}}</td>
+				        </tr>
+				         <tr><td>company<td>
+				        <td>{{profileData.company}}</td>
+				        </tr>
+				       
+				         <tr><td>followers<td>
+				        <td>{{profileData.followers}}</td>
+				        </tr> 
+
+				        
+				      
+				 <!--     <p ng-show="(approvedAppointmentData | filter:searchAppointment).length == 0" style="color:red">Data Not Available!</p>  -->
+				    </tbody>
+				  </table>
+				  
+</center>
+<script src="angscript.js"></script> 
+<script src="angular.min.js.map"></script> 
+<script src="profilecontroller.js"></script>
+</body>
+
